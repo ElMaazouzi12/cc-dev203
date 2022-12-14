@@ -8,12 +8,13 @@ const DetailUser = () => {
   const detailUser = data.users.filter((user) => {
     return user.id == id;
   });
+  
 
   return (
     <div className="detailuser">
       {detailUser.map((user) => (
         <div key={user.id}>
-            <img src={user.image} alt={user.id} />
+            <img src={user.image} alt={user.id}/>
             <h3>First Name: {user.firstName}</h3>
             <h3>last Name: {user.lastName}</h3>
             <h3>Age : {user.age}</h3>
